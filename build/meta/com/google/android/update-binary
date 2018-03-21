@@ -36,7 +36,7 @@ ui_print "Mounting system partition"
 if [ "$SYSTEMASROOT" == "true" ]; then
   CURRENTSLOT=`getprop ro.boot.slot_suffix`
   if [ ! -z "$CURRENTSLOT" ]; then
-    if [ "$CURRENTSLOT" == "_a" ]; then
+    if [ "$CURRENTSLOT" == "_b" ]; then
       TARGETSYSTEM=/dev/block/bootdevice/by-name/system_b
     else
       TARGETSYSTEM=/dev/block/bootdevice/by-name/system_a
